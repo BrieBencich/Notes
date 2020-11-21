@@ -8,11 +8,11 @@ const writeFileAsync = util.promisify(fs.writeFile);
 
 class Store { 
     read() { 
-    return readFileAsync('db/db.json', 'utf8'); 
+    return readFileAsync('Develop/db/db.json', 'utf8'); 
 }
 
 write(note) { 
-    return writeFileAsync('db/db.json', JSON.stringify(note)); 
+    return writeFileAsync('Develop/db/db.json', JSON.stringify(note)); 
 
 }
 
@@ -46,9 +46,9 @@ return this.getNotes()
   .then(() => newNote); 
 }
 
-remoteNote(id) { 
+removeNote(id) { 
     return this.getNotes()
-    .then((notes) => notes.filter((notes) => note.id !== id))
+    .then((notes) => notes.filter((note) => note.id !== id))
     .then((filteredNotes) => this.write(filteredNotes)); 
 } 
 } 
