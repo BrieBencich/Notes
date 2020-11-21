@@ -4,9 +4,8 @@
   "description": "",
   "main": "server.js",
   "dependencies": {
-    "express": "^4.17.1", 
-    "uuid": "^8.3.1"
-    
+    "express": "^4.17.1",
+    "uuid": "^3.4.0"
   },
   "devDependencies": {},
   "scripts": {
@@ -18,7 +17,7 @@
     "url": "git+https://github.com/BrieBencich/Notes.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "Brie Bencich",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/BrieBencich/Notes/issues"
